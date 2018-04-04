@@ -34,6 +34,7 @@ end
 
 def reverse_transfer
   if self.status == "complete"
+    @sender.balance
 end
   
 end
