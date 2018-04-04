@@ -21,9 +21,7 @@ class BankAccount
   
   def valid?
     if self.balance >= 0 
-    else
-      false 
-    end
+    
   end
 
 
