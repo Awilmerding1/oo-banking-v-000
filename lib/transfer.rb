@@ -22,11 +22,12 @@ class Transfer
     receiver_balance = @receiver.balance 
     sender_change = sender_balance - @amount 
     receiver_change = receiver_balance + @amount
-    
     @sender.balance = sender_change 
     @receiver.balance = receiver_change
     self.status = "complete"
     end
+  else 
+    
   end
 end
 
