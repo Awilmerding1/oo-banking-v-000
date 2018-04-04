@@ -20,8 +20,10 @@ class BankAccount
   end
   
   def valid?
+     balance = 0 
+     status = 'open'
     case balance 
-    when self.balance <= 0 
+    when self.balance <= 
       false 
     end
     case status 
