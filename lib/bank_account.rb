@@ -20,13 +20,11 @@ class BankAccount
   end
   
   def valid?
-    case status 
-    when 'open'
+    if self.balance >= 0 
       true 
+    else
+      false 
     end
-    
-    case balance 
-    when 
   end
 
 
