@@ -27,7 +27,7 @@ class Transfer
     @receiver.balance = receiver_change
     self.status = "complete"
     end
-  when false
+    when false
     self.status = "rejected"
     "Transaction rejected. Please check your account balance."
   end
