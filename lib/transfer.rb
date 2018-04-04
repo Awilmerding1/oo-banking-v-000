@@ -16,7 +16,8 @@ class Transfer
   end
   
   def execute_transaction
-    case @sender.valid?
+    return_value = @sender.valid?
+    case return_value
     when true
     until self.status == "complete"
     sender_balance = @sender.balance 
