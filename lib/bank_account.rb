@@ -24,6 +24,9 @@ class BankAccount
     when 'open'
       true 
     end
+    
+    case balance 
+    when 
   end
 
 
