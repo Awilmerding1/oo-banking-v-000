@@ -19,7 +19,7 @@ class Transfer
     receiver_balance = @receiver.balance 
     sender_change = sender_balance - @amount 
     receiver_change = receiver_balance + @amount
-    if sender_change > 0 
+    if @sender.valid? == true  
     @sender.balance = sender_change 
     @receiver.balance = receiver_change
     self.status = "complete"
