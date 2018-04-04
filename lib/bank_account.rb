@@ -20,7 +20,8 @@ class BankAccount
   end
   
   def valid?
-    
+    case balance 
+    when 
   end
 
 
