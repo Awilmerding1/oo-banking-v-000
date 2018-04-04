@@ -27,8 +27,6 @@ class Transfer
     @receiver.balance = receiver_change
     self.status = "complete"
     end
-  end
-end
 end
 
 def reverse_transfer
