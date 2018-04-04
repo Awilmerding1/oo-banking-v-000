@@ -20,14 +20,7 @@ class BankAccount
   end
   
   def valid?
-     balance = 0 
-     status = 'open'
-    case balance 
-    when 
-      false 
-    end
-    case status 
-    
+     true unless 
   end
 
 
