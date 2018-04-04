@@ -20,7 +20,7 @@ class BankAccount
   end
   
   def valid?
-    case valid 
+    case balance 
     when self.balance > 0 
   end
 
