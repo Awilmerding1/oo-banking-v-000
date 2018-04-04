@@ -36,6 +36,8 @@ def reverse_transfer
   if self.status == "complete"
   reverse_sender = @sender.balance + @amount 
   reverse_receiver = @receiver.balance - @amount
+  @sender.balance = reverse_sender
+  @receiver.balance = reverse_receiver
 end
 end
   
