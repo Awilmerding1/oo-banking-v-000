@@ -23,7 +23,7 @@ class BankAccount
      balance = 0 
      status = 'open'
     case balance 
-    when self.balance <= 
+    when 
       false 
     end
     case status 
