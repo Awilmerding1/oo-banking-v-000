@@ -15,10 +15,8 @@ class Transfer
   end
   
   def execute_transaction
-    sender_balance = @sender.balance 
-    receiver_balance = @receiver.balance 
-    sender_change = sender_balance - @amount 
-    receiver_change = receiver_balance + @amount
+    new_receiver_balance = @receiver.balance - @amount
+    new_sender_balance = @sender.balance - @amount 
     if @sender.valid? == true  
     @sender.balance = sender_change 
     @receiver.balance = receiver_change
